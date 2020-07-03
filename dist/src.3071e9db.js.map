@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["require"],"mappings":";;;AAAAA,QAAQ","file":"src.3071e9db.js","sourceRoot":"..\\src","sourcesContent":["require('./sass/main.scss');\r\n"]}

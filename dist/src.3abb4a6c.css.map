@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass\\main.scss"],"names":[],"mappings":"AAGA,KACE,iBAEF,WACE","file":"src.3abb4a6c.css","sourceRoot":"..\\src","sourcesContent":["// @import './base';\r\n// @import './container';\r\n\r\nbody {\r\n  background: green;\r\n}\r\n.container {\r\n  background-color: green;\r\n}\r\n"]}
