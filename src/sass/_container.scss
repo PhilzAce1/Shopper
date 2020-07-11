@@ -5,12 +5,11 @@
 .nav_btn {
   right: 0;
   top: 10;
-  margin: 20px;
+  margin: 30px;
   background: none;
   border: none;
-  font-size: 3em;
-
-  color: green;
+  font-size: 2.5em;
+  z-index: 1000;
 }
 main.container {
   display: flex;
@@ -25,12 +24,11 @@ main.container {
     flex-flow: row nowrap;
   }
   .nav_container {
-    display: none;
     height: 100vh;
     width: 100vw;
     background: transparent;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     .box_wrapper {
       display: flex;
       div {
@@ -44,12 +42,23 @@ main.container {
       background-color: none;
       height: 100vh;
       width: 100vw;
+      // display: flex;
+      // flex-flow: row nowrap;
+      // justify-content: center;
+      // align-items: center;
       top: 0;
       ul {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50%, -50);
         list-style: none;
         li {
           list-style: none;
+          font-size: 2em;
+          margin: 20px;
           a {
+            text-decoration: none;
             color: $primary-color;
           }
         }
@@ -63,11 +72,47 @@ main.container {
     height: 50vh;
     width: 100%;
     background-color: $secondary-bg-color;
+    position: relative;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      @media (min-width: 450px) {
+        height: auto;
+        width: 60%;
+        position: absolute;
+        &#img1 {
+          top: 50%;
+          left: 40%;
+          z-index: 3;
+        }
+        &#img2 {
+          top: 40%;
+          left: 80%;
+          z-index: 2;
+        }
+        &#img3 {
+          top: 25%;
+          left: 60%;
+          z-index: 1;
+        }
+      }
+    }
+    .not_show {
+      display: none;
+      @media (min-width: 450px) {
+        display: inline-block;
+      }
+      // visibility: hidden;
+    }
+
     @media (min-width: 450px) {
       height: 100vh;
       width: 40vw;
+      // .not_show {
+      // }
     }
   }
+
   section.text_section {
     background: $primary-bg-color;
     height: 50vh;
@@ -77,6 +122,7 @@ main.container {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
     article.home {
       height: 80%;
       width: 80%;
@@ -130,6 +176,22 @@ main.container {
           }
         }
       }
+    }
+    section#about_img {
+      background-color: blue;
+    }
+    article.about {
+      min-height: auto;
+      width: 80%;
+      // margin-top: -100px;
+      @media (min-width: 450px) {
+        margin-top: 0px;
+
+        height: 40%;
+        width: 40%;
+      }
+
+      // overflow-y: auto;
     }
     @media (min-width: 450px) {
       height: 100vh;
