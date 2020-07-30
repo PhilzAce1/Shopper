@@ -28,9 +28,9 @@
   position: absolute;
   z-index: 99;
   div {
-    font-size: 10em;
+    font-size: 3em;
     @media (min-width: 450px) {
-      font-size: 3em;
+      font-size: 10em;
     }
   }
 }

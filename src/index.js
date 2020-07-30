@@ -46,53 +46,59 @@ function landingEffect() {
   console.log('landing page should be working na ');
   dv.to('.loader_container', {
     opacity: 0,
-    duration: 2,
-    delay: 2,
+    duration: 1,
   })
     .to('.loader_container', {
       display: 'none',
     })
     .to('.welcome_conatainer div', {
-      duration: 1,
+      duration: 0.3,
       text: {
         value: 'SHOPPER',
         delimiter: '',
       },
-      ease: 'power2',
-      delay: -0.25,
+      //   ease: 'power2',
+      //   delay: -0.25,
     })
     .to('.welcome_conatainer', {
       opacity: 0,
-      duration: 2,
-      delay: 2,
+      duration: 1,
+      delay: 1,
     })
     .to('.welcome_conatainer', {
       display: 'none',
     })
     .from('.img_section', {
       scaleX: 0,
+      duration: 0.4,
       transformOrigin: 'left',
     })
     .from('.text_section', {
       opacity: 0,
+      duration: 0.4,
       scaleX: 0,
       transformOrigin: 'right',
+      background: 'purple',
       zIndex: '-1',
     })
     .from('#img1', {
+      duration: 0.4,
       opacity: '0',
       y: -100,
     })
     .from('#img2', {
       opacity: '0',
+      duration: 0.4,
       x: 100,
     })
     .from('#img3', {
+      duration: 0.4,
       opacity: '0',
       x: -100,
     })
     .from('.text_section .home', {
       opacity: '0',
+      duration: 0.4,
       x: -100,
     });
 }
