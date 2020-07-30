@@ -29,12 +29,15 @@ main.container {
     background: transparent;
     position: absolute;
     z-index: 4;
+    display: none;
     .box_wrapper {
       display: flex;
       div {
         width: 20%;
         height: 100vh;
-        background: $primary-bg-color;
+        background: #c5c8c9;
+        transform: scaleX(0);
+        transform-origin: top;
       }
     }
     nav {
@@ -73,6 +76,8 @@ main.container {
     width: 100%;
     background-color: $secondary-bg-color;
     position: relative;
+    z-index: 1;
+
     img {
       max-height: 100%;
       max-width: 100%;
